@@ -1,0 +1,16 @@
+.topbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: rgb(203,203,203);
+    background: linear-gradient(115deg, rgba(203,203,203,1) 63%, rgba(0,0,0,1) 63%);
+    margin-top: -95px;
+    padding: 0;
+}
+
+.topbar > h1 {
+    margin: 10px auto;
+}
