@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: black;
     background: rgb(203,203,203);
@@ -11,6 +11,25 @@
     padding: 0;
 }
 
-.topbar > h1 {
-    margin: 10px auto;
+.topbar > input {
+   box-sizing: none;
+   border: none;
+   margin-right: -100px;
+   padding: 15px 15px;
+   border-radius: 15px;
 }
+
+.topbar > input::placeholder {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.seen_search {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    right: 30%;
+}
+
