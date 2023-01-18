@@ -26,10 +26,17 @@
 }
 
 .seen_search {
+    background: rgb(95, 119, 135);
+    border-radius: 25px;
     position: fixed;
     display: flex;
-    justify-content: end;
     align-items: center;
-    right: 30%;
+    margin-top: 50px;
+    padding: 10px 25px;
+    right: 22%;
+}
+
+.seen_search > img {
+    width: 100px;
 }
 
