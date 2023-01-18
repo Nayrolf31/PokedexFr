@@ -3,8 +3,13 @@ import "../styles/Topbar.css";
 function Topbar() {
   return (
     <div className="topbar">
-        <h1>Pokédex</h1>
-        <input />
+      <h1>Pokédex</h1>
+      <input
+        type="texte"
+        placeholder="Pokémon" 
+        // onChange={}
+        
+        />
     </div>
   )
 }
