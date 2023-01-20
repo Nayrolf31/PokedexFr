@@ -18,8 +18,15 @@ function Pokeinfo({ data }) {
                 })
               }
             </div>
-            <div className="base-stat">
-            </div>
+            {/* <div className="base-stat">
+            {
+                data.stats.map(stat => {
+                  return (
+                    <h2> { stat.HP } </h2>
+                  )
+                })
+              }
+            </div> */}
           </>
         )
       }

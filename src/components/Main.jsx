@@ -5,20 +5,23 @@ import { useState } from "react";
 import Pokeinfo from "./Pokeinfo";
 import Card from "./Card";
 import Topbar from "./Topbar";
+import Pokeseen from "./Pokeseen";
 
 function Main({ pokemons }) {
-    
+
     const [pokeDex, setPokeDex] = useState();
+    const [seenDex, setseenDex] = useState();
     return (
         <>
             <Topbar />
-        
+
             <div className="container">
                 <div className="left-content">
-                    <Card pokemons={pokemons} infoPokemon={poke => setPokeDex(poke)} />
+                    <Card pokemons={pokemons} infoPokemon={poke => setPokeDex(poke)} seenPokemon={poke => setseenDex(poke)} />
                 </div>
                 <div className="seen">
-                    <Pokeinfo data={pokeDex}/>
+                    <Pokeseen data={seenDex} />
+                    <Pokeinfo data={pokeDex} />
                 </div>
             </div>
         </>

@@ -5,7 +5,8 @@
     text-align: center;
     color: black;
     position: fixed;
-    top: 350px;
+    /* top: 350px; */
+    top: 170px;
     right: 250px;
 }
 

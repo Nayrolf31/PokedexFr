@@ -1,31 +1,39 @@
 import "../styles/Topbar.css";
-import { useState } from "react";
-import axios from "axios";
+// import { useState } from "react";
+// import axios from "axios";
 
 function Topbar() {
 
-  const [data, setData] = useState({})
-  const [name, setPokemonName] = useState('')
 
-  const url = `https://pokebuildapi.fr/api/v1/pokemon/${name}`
+                                        // {/* INPUT SEARCH */}
 
-  const searchPokemon = (event) => {
-    if (event.key === 'Enter') {
+  // const [data, setData] = useState({})
+  // const [name, setPokemonName] = useState('')
 
-      axios.get(url)
-        .then((response) => {
-          setData(response.data)
-          console.log("res DATA   ", response.data);
-        })
-      setPokemonName('')
-    }
-  }
+  // const url = `https://pokebuildapi.fr/api/v1/pokemon/${name}`
+
+  // const searchPokemon = (event) => {
+  //   if (event.key === 'Enter') {
+
+  //     axios.get(url)
+  //       .then((response) => {
+  //         setData(response.data)
+  //         console.log("res DATA   ", response.data);
+  //       })
+  //     setPokemonName('')
+  //   }
+  // }
+
+                                        // {/* INPUT SEARCH */}
 
   return (
     <>
       <div className="topbar">
         <h1>Pokédex</h1>
-        <input
+
+                                      {/* INPUT SEARCH */}
+
+        {/* <input
           value={name}
           onChange={event => setPokemonName(event.target.value)}
           type="texte"
@@ -33,15 +41,13 @@ function Topbar() {
           onKeyPress={searchPokemon}
         />
       </div>
-      { data.id ?  <div className="seen_search">
-        
-        {/* { data.id ? <h1>N°{data.id} {data.name}</h1> : null}
-        {data.id ? <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
-          alt="visuel search" /> : null} */}
+      {data.id ? <div className="seen_search">
 
-<h1>N°{data.id} {data.name}</h1> 
+        <h1>N°{data.id} {data.name}</h1>
         <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
-          alt="visuel search" /> 
+          alt="visuel search" /> */}
+
+                                                {/* INPUT SEARCH */}
 
 
 
@@ -58,7 +64,12 @@ function Topbar() {
           })
         } */}
 
-      </div> : null}
+      </div> 
+      
+      
+                                            {/* INPUT SEARCH
+      : null}
+                                            INPUT SEARCH */}
     </>
   )
 }
