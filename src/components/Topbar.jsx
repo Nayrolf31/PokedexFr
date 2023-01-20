@@ -33,10 +33,18 @@ function Topbar() {
           onKeyPress={searchPokemon}
         />
       </div>
-      <div className="seen_search">
-        { data.id ? <h1>N°{data.id} {data.name}</h1> : null}
+      { data.id ?  <div className="seen_search">
+        
+        {/* { data.id ? <h1>N°{data.id} {data.name}</h1> : null}
         {data.id ? <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
-          alt="visuel search" /> : null}
+          alt="visuel search" /> : null} */}
+
+<h1>N°{data.id} {data.name}</h1> 
+        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
+          alt="visuel search" /> 
+
+
+
         {/* <div className="search_abilitées">
         { data.apiTypes.name ?  <h2>{data.apiTypes.name}</h2> : null }
       </div> */}
@@ -50,7 +58,7 @@ function Topbar() {
           })
         } */}
 
-      </div>
+      </div> : null}
     </>
   )
 }
