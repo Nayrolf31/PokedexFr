@@ -52,7 +52,7 @@
     font-size: 1.2rem ;
 }
 
-@media screen and (min-width: 376px) and (max-width: 786px) {
+@media screen and (min-width: 450px) and (max-width: 786px) {
 	.base-stat{
         align-items: center;
         margin-top: -200px;
@@ -94,7 +94,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 449px) {
 	
 	.title_pokeseen, .caught_pokeseen, .base-stat {
         display: none;
@@ -119,6 +119,7 @@
     .abilitées > h2 {
         font-size: 1rem;
     }
+
 
 
 
