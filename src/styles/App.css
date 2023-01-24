@@ -1,7 +1,5 @@
-body{
+body {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* background: linear-gradient(115deg, rgba(255, 255, 255, 1) 19%, rgba(0, 0, 0, 0.0760679271708683) 48%,
-      rgba(244, 82, 59, 1) 48%, rgba(244, 82, 59, 1) 58%, rgba(250, 114, 72, 1) 58%); */
-      background-image: url("../assets/background.jpg");
+  background-image: url("../assets/background.jpg");
 }
