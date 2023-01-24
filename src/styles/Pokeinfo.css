@@ -38,10 +38,88 @@
     padding: 5px 15px ;
 } 
 
-@media screen and (min-width: 320px) and (max-width: 786px) {
-	
+.base-stat {
+    background: #000;
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    right: -30%;
+    padding: 5px 15px;
+    margin-top: -390px;
 }
 
-@media screen and (min-width: 787px) and (max-width: 1240px) {
+.base-stat > h2 {
+    font-size: 1.2rem ;
+}
+
+@media screen and (min-width: 376px) and (max-width: 786px) {
+	.base-stat{
+        align-items: center;
+        margin-top: -200px;
+
+    }
+
+    .seen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 15%;
+    }
+
+    .seen > img {
+        width: 200px;
+    }
+
+    .seen > h1 {
+        font-size: 1.6rem;
+    }
+
+    .abilitées > h2 {
+        font-size: 1.2rem;
+    }
+
+    .title_pokeseen, .caught_pokeseen {
+        display: none;
+    }
+
+    .base-stat {
+        display: flex;
+        flex-direction: column;
+        margin-top: 600px;
+        right: 15px;
+    }
+    .base-stat > h2 {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
 	
+	.title_pokeseen, .caught_pokeseen, .base-stat {
+        display: none;
+    }
+
+    .seen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 15%;
+    }
+
+    .seen > img {
+        width: 160px;
+    }
+
+    .seen > h1 {
+        font-size: 1.2rem;
+    }
+
+    .abilitées > h2 {
+        font-size: 1rem;
+    }
+
+
+
 }

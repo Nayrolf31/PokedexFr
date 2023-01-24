@@ -1,7 +1,7 @@
 
 
 function Pokeseen({ data }) {
-    console.log(" DATA pokeseen", data);
+    // console.log(" DATA pokeseen", data);
   return (
     <>
     {

@@ -1,0 +1,12 @@
+.inputsearch {
+    position: fixed;
+    top: 150px;
+    right: 5%;
+}
+
+.inputsearch > input {
+    margin: 5px auto;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+}

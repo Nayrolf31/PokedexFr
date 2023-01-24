@@ -6,6 +6,7 @@ import Pokeinfo from "./Pokeinfo";
 import Card from "./Card";
 import Topbar from "./Topbar";
 import Pokeseen from "./Pokeseen";
+// import Inputsearch from "./Inputsearch";
 
 function Main({ pokemons }) {
 
@@ -17,8 +18,11 @@ function Main({ pokemons }) {
 
             <div className="container">
                 <div className="left-content">
-                    <Card pokemons={pokemons} infoPokemon={poke => setPokeDex(poke)} seenPokemon={poke => setseenDex(poke)} />
+                    <Card  pokemons={pokemons} infoPokemon={poke => setPokeDex(poke)} seenPokemon={poke => setseenDex(poke)} />
                 </div>
+                {/* <div className="inputsearch">
+                    <Inputsearch />
+                </div> */}
                 <div className="seen">
                     <Pokeseen data={seenDex} />
                     <Pokeinfo data={pokeDex} />

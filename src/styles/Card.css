@@ -50,6 +50,17 @@ img {
     } */
 }
 
-@media screen and (min-width: 787px) and (max-width: 1240px) {
-	
+@media screen and (max-width: 375px) {
+
+    .card__list {
+        width: 50%;
+    }
+
+    .card__list > img {
+        width: 60px;
+    }
+
+	.card__list > h2 {
+        display: none;
+    }
 }
