@@ -1,4 +1,4 @@
-.topbar {
+/* .topbar {
     position: absolute;
     width: 100%;
     display: flex;
@@ -54,4 +54,23 @@
 
 @media screen and (min-width: 787px) and (max-width: 1240px) {
 	
+} */
+
+
+.topbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background: linear-gradient(115deg, rgba(203,203,203,1) 63%, rgba(0,0,0,1) 63%);
+    margin-top: 50px;
 }
+
+@media screen and (max-width: 800px) {
+    .topbar {
+        background: linear-gradient(115deg, rgba(203,203,203,1) 75%, rgba(0,0,0,1) 75%);
+    }
+}
+
