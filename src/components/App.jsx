@@ -6,10 +6,6 @@ import Main from './Main';
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
-  // const [active, setActive] = useState('card')
-  // const [pokeDex, setPokeDex] = useState();
-
-  // getPokemon(res.data.results)
 
   useEffect(() => {
     axios.get('https://pokebuildapi.fr/api/v1/pokemon')

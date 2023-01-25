@@ -15,14 +15,12 @@ function Main({ pokemons }) {
     return (
         <>
             <Topbar />
+            {/* <Inputsearch pokemons={pokemons} /> */}
 
             <div className="container">
                 <div className="left-content">
-                    <Card pokemons={pokemons} infoPokemon={poke => setPokeDex(poke)} seenPokemon={poke => setseenDex(poke)} />
+                    <Card loading="lazy" pokemons={pokemons} infoPokemon={poke => setPokeDex(poke)} seenPokemon={poke => setseenDex(poke)} />
                 </div>
-                {/* <div className="inputsearch">
-                    <Inputsearch />
-                </div> */}
                 <div className="right-content">
                     <div className="pokeseen">
                         <Pokeseen data={seenDex} />
