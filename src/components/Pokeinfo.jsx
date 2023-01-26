@@ -6,7 +6,7 @@ function Pokeinfo({ data }) {
       {
         (!data) ? "" : (
           <>
-            <h1 className="title_seen">N°{data.id} {data.name}</h1>
+            <h1 className="title_seen">N°{data.id} {data.name} </h1>
             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
               alt="vue pokémon cliqué" />
             <div className="abilitées" >

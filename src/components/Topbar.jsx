@@ -1,6 +1,6 @@
 import "../styles/Topbar.css";
 
-function Topbar({ data }) {
+function Topbar() {
 
   return (
     <>
