@@ -1,5 +1,5 @@
 .pokesearch {
-    z-index: 7;
+    z-index: -1;
     position: fixed;
     width: 45%;
     display: flex;
